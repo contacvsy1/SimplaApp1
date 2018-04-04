@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/vijay/IdeaProjects/SimpleApp1/src/main/scala/SimplaApp1.scala:17:25: missing argument list for method textFile in class SparkContext[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `textFile _` or `textFile(_,_)` instead of `textFile`.[0m
+[0m[[0m[31merror[0m] [0m[0m    val filereadme = sc.textFile.rdd {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

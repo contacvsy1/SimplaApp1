@@ -1,4 +1,4 @@
-name := "SimpleApp1"
+name := "SimplaApp1"
 
 version := "0.1"
 

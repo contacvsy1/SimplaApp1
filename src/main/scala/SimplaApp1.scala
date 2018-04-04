@@ -1,12 +1,13 @@
-/* SimpleApp.scala */
+/* SimplaApp.scala */
 import org.apache.spark.sql.SparkSession
 import java.io.File
 import java.io.PrintWriter
 
 object SimplaApp1 {
   def main(args: Array[String]) {
+
     val logFile = "YOUR_SPARK_HOME/README.md" // Should be some file on your system
-    val spark = SparkSession.builder.appName("Simple Application").getOrCreate()
+    val spark = SparkSession.builder.appName("Simple Application").config("spark.master", "local").getOrCreate()
     val logData = spark.read.textFile(logFile).cache()
     val numAs = logData.filter(line => line.contains("a")).count()
     val numBs = logData.filter(line => line.contains("b")).count()
